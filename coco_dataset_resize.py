@@ -32,7 +32,7 @@ def resizeImageAndBoundingBoxes(imgFile, bboxes, inputW, inputH, targetImgW, tar
                                     iaa.Resize({"height": targetImgH, "width": "keep-aspect-ratio"}),
                                     iaa.PadToFixedSize(width=targetImgW, height=targetImgH)
                                 ])
-    else if targetImgH > targetImgW:
+    elif targetImgH > targetImgW:
         seq = iaa.Sequential([
                                 iaa.Resize({"height": "keep-aspect-ratio", "width": targetImgW}),
                                 iaa.PadToFixedSize(width=targetImgW, height=targetImgH)
