@@ -3,5 +3,5 @@ python coco_dataset_resize.py \
 --annotations_file="/kaggle/input/annotation-file/instances_train2017_seen.json" \
 --image_width=512 \
 --image_height=512 \
---output_ann_file="resized_annotations.json" \
---output_img_dir="/kaggle/working/COCO-dataset-resize/output/"
+--output_ann_file="/kaggle/input/resized-coco/resized_annotations.json" \
+--output_img_dir="/kaggle/input/resized-coco/"
